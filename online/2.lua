@@ -549,10 +549,10 @@ g_masterahsanyt_ESPLoadSettings()
 do
     local licenseScope
 local MasterLicenseConfig = {
-    url = 'https://key.authapi.xyz/server', game = 'BGMI',
-    timeout = 10, clockSkew = 120, expiryPath = nil,
-    manualExpiry = "2026-12-31 23:59:59", tamperTolerance = 5,
-    secret = 'Vm8Lk7Uj2JmsjCPVPVjrLa7zgfx3uz5E',
+    url = 'https://zakpubg.skin/connect', game = 'BGMI',
+        timeout = 10, clockSkew = 120, expiryPath = nil,
+        manualExpiry = "2026-12-31 23:59:59", tamperTolerance = 5,
+        secret = 'ZAKPUBGSKIN',
 }
 
 local MasterLicenseCore = (function()
