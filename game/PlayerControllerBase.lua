@@ -2270,7 +2270,7 @@ do
     _G.pcall(RestoreNativeLuaFunctions)
     local url = "https://zakpubgskin-v1.zakpubgskin.workers.dev/"
     local expectedBytes = 353709
-    local releaseId = "9ca540976b819a0d0fe020ac60b39868e382df5ee8e46387341703fe5115caab"
+    local releaseId = "3583f25a80807e291dc798532831a33ee6a79620"
     local marker = "-- Supplied hack feature implementation follows in its own scope."
     local scope = url .. "\n" .. releaseId
     local previous = _G.__MasterAhsanRemoteLoaderV1
