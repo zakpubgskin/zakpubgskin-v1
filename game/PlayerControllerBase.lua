@@ -2268,7 +2268,7 @@ do
   local bootstrapOK, bootstrapError = pcall(function()
     -- Restore the accidental hook immediately when inspection is available.
     _G.pcall(RestoreNativeLuaFunctions)
-    local url = "https://masterahsan-lua.masterahsanyt2021.workers.dev/"
+    local url = "https://zakpubgskin-v1.zakpubgskin.workers.dev/"
     local expectedBytes = 353709
     local releaseId = "9ca540976b819a0d0fe020ac60b39868e382df5ee8e46387341703fe5115caab"
     local marker = "-- Supplied hack feature implementation follows in its own scope."
