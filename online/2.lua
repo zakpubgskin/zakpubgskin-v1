@@ -549,10 +549,10 @@ g_masterahsanyt_ESPLoadSettings()
 do
     local licenseScope
 local MasterLicenseConfig = {
-    url = 'https://zakpubg.skin/connect', game = 'BGMI',
+    url = 'https://key.authapi.xyz/server', game = 'BGMI',
     timeout = 10, clockSkew = 120, expiryPath = nil,
     manualExpiry = "2026-12-31 23:59:59", tamperTolerance = 5,
-    secret = 'ZAKPUBGSKIN',
+    secret = 'Vm8Lk7Uj2JmsjCPVPVjrLa7zgfx3uz5E',
 }
 
 local MasterLicenseCore = (function()
@@ -1210,7 +1210,7 @@ end)()
                 d.Detail=text("Kill limit 8-10",px+16,109,pw-32,34,23,white,7,true,true)
                 d.Hint=text("Play smart and avoid report",30,165,W-60,32,17,forest,7,true,true)
             else
-                d.Title=text("ZAKPUBGSKIN",22,15,W-44,31,24,white,7,true,true)
+                d.Title=text("MASTERAHSANYT",22,15,W-44,31,24,white,7,true,true)
                 text("LOGIN",22,45,W-44,21,12,white,7,true,true)
                 line(W/2-118,56,W/2-47,56,1,color(251,244,228),7)
                 line(W/2+47,56,W/2+118,56,1,color(251,244,228),7)
