@@ -1,0 +1,19 @@
+{
+  "name": "masterahsan-controller-portable-source",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "configure": "node tools/project.mjs configure",
+    "build": "node tools/project.mjs build",
+    "check": "node tools/verify.mjs",
+    "dry-run": "node tools/project.mjs dry-run",
+    "deploy": "node tools/project.mjs deploy",
+    "verify-online": "node tools/project.mjs verify-online"
+  },
+  "devDependencies": {
+    "wrangler": "4.161.0"
+  }
+}

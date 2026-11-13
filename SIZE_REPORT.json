@@ -1,0 +1,59 @@
+{
+  "game_file": "PlayerControllerBase.lua",
+  "output_bytes": 93757,
+  "original_bytes": 93926,
+  "raw_bytes_saved": 169,
+  "output_sha256": "7788b2440840f291d3ddb6cc27eedc1f43a236b40901945a0737bcbd06215d2e",
+  "payload_bytes": 353709,
+  "payload_sha256": "9ca540976b819a0d0fe020ac60b39868e382df5ee8e46387341703fe5115caab",
+  "zlib": {
+    "1": {
+      "original": 22915,
+      "output": 24769,
+      "fits_original": false
+    },
+    "2": {
+      "original": 22029,
+      "output": 23813,
+      "fits_original": false
+    },
+    "3": {
+      "original": 21278,
+      "output": 23179,
+      "fits_original": false
+    },
+    "4": {
+      "original": 19588,
+      "output": 21493,
+      "fits_original": false
+    },
+    "5": {
+      "original": 18878,
+      "output": 20773,
+      "fits_original": false
+    },
+    "6": {
+      "original": 18514,
+      "output": 20520,
+      "fits_original": false
+    },
+    "7": {
+      "original": 18435,
+      "output": 20454,
+      "fits_original": false
+    },
+    "8": {
+      "original": 18387,
+      "output": 20428,
+      "fits_original": false
+    },
+    "9": {
+      "original": 18388,
+      "output": 20428,
+      "fits_original": false
+    }
+  },
+  "fits_original_compressed_all_levels": false,
+  "game_runtime_tested": false,
+  "pak_encryption_tested": false
+}
