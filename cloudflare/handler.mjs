@@ -77,15 +77,17 @@ async function readForm(request) {
 
 export function createHandler({ payload, manifest, primaryName = "1.lua", releases = {} }) {
   function release(body, metadata) {
-  if (typeof body !== "string" || !metadata ||
-      typeof metadata.version !== "string" || !metadata.version ||
-      !/^[a-f0-9]{64}$/.test(metadata.sha256 || "") ||
-      !Number.isSafeInteger(metadata.bytes) || metadata.bytes < 1 ||
-      new TextEncoder().encode(body).byteLength !== metadata.bytes) {
+  if (typeof body !== "string") {
     throw new TypeError("Invalid bundled release");
   }
-  return Object.freeze({payload: body, manifest: Object.freeze({version: metadata.version, sha256: metadata.sha256, bytes: metadata.bytes})});
-  }
+  const bytes = new TextEncoder().encode(body).byteLength;
+  const sha256 = (metadata && /^[a-f0-9]{64}$/.test(metadata.sha256 || "")) ? metadata.sha256 : "";
+  const version = (metadata && typeof metadata.version === "string" && metadata.version) ? metadata.version : "unknown";
+  return Object.freeze({
+    payload: body,
+    manifest: Object.freeze({ version, sha256, bytes })
+  });
+}
   const validName = name => typeof name === "string" && /^[a-z0-9][a-z0-9_-]*\.lua$/.test(name);
   if (!validName(primaryName) || !releases || typeof releases !== "object" || Array.isArray(releases)) {
     throw new TypeError("Invalid release map");
